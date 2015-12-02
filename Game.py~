@@ -24,18 +24,6 @@ def borders(cells):
 			cell.set_dx(-cell.get_dx())
 		if (cell.ycor()>height):
 			cell.set_dy(-cell.get_dy())
-
-
-def borders(cells):
-	for cell in cells:
-		width=get_screen_width()
-		height=get_screen_height()
-		x=cell.xcor()
-		y=cell.ycor()
-		if (cell.xcor()>width):
-			cell.set_dx(cell.get_dx())
-		if (cell.ycor()>height):
-			cell.set_dy(cell.get_dy())
 while(True):
 	move_cells(cells)
 	borders(cells)
